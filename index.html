@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Score Board</h1>
+    </header>
+
+    <main>
+        <div id="home" class="board">
+            <h1>HOME</h1>
+            <h1 class="score" id="home-score">0</h1>
+            <button onclick="homePoints('1')">+1</button>
+            <button onclick="homePoints('2')">+2</button>
+            <button onclick="homePoints('3')">+3</button>
+        </div>
+
+        <div id="away" class="board">
+            <h1>AWAY</h1>
+            <h1 class="score" id="away-score">0</h1>
+            <button onclick="awayPoints('1')">+1</button>
+            <button onclick="awayPoints('2')">+2</button>
+            <button onclick="awayPoints('3')">+3</button>
+        </div>
+    </main>
+
+    <button id="reset">Reset Score</button>
+
+    <div id="winner">
+        <h1 id="results"></h1>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
